@@ -1,0 +1,35 @@
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  top: 35%;
+}
+
+.swiper-button-next {
+  width: 110px;
+  height: 110px;
+  right: -2%;
+}
+.swiper-button-next::after {
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/next-button.svg') !important;
+  content: 'sa';
+}
+
+.swiper-button-prev {
+  width: 110px;
+  height: 110px;
+  left: -2%;
+}
+.swiper-button-prev::after {
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/prev-button.svg') !important;
+  content: 'sa';
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #3DA9FC;
+}
