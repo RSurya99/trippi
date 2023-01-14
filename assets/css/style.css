@@ -9,7 +9,7 @@ body {
 .swiper-button-next {
   width: 110px;
   height: 110px;
-  right: -2%;
+  right: -2.25%;
 }
 .swiper-button-next::after {
   width: 100%;
@@ -21,8 +21,9 @@ body {
 .swiper-button-prev {
   width: 110px;
   height: 110px;
-  left: -2%;
+  left: -2.25%;
 }
+
 .swiper-button-prev::after {
   width: 100%;
   height: 100%;
@@ -32,4 +33,34 @@ body {
 
 .swiper-pagination-bullet-active {
   background-color: #3DA9FC;
+}
+
+@media (max-width: 768px){
+  .swiper-button-next {
+    right: -7%;
+  }
+
+  .swiper-button-prev {
+    left: -7%;
+  }
+}
+
+@media (max-width: 1023px){
+  .swiper-button-next {
+    right: -4%;
+  }
+
+  .swiper-button-prev {
+    left: -4%;
+  }
+}
+
+@media (max-width: 1279px){
+  .swiper-button-next {
+    right: -3%;
+  }
+
+  .swiper-button-prev {
+    left: -3%;
+  }
 }

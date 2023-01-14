@@ -11,15 +11,15 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="w-full overflow-x-hidden">
+<body class="w-full">
   <header class="max-w-screen-xl mx-auto mb-8">
-    <nav class="px-5 py-12 flex items-center justify-between">
+    <nav class="px-4 sm:px-5 py-12 flex items-center justify-between space-x-12">
       <div class="flex items-center space-x-8">
         <div id="logo" class="flex items-center space-x-2">
           <img src="assets/img/logo.png" class="w-8 h-8" alt="Trippi Logo">
           <h5 class="text-xl font-bold text-[#094067]">Trippi</h5>
         </div>
-        <div class="px-5 py-3 w-[550px] border-2 border-[#094067] rounded-md flex space-x-2">
+        <div class="hidden px-5 py-3 w-[550px] border-2 border-[#094067] rounded-md lg:flex space-x-2">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <circle cx="10" cy="10" r="7"></circle>
@@ -28,7 +28,17 @@
           <input class="w-full border-none outline-none focus:outline-none" type="text" placeholder="Cari tempat liburan, hotel, tiket pesawat, dll">
         </div>
       </div>
-      <div class="flex items-center space-x-5">
+      <div class="lg:hidden">
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="18" x2="20" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="hidden lg:flex items-center space-x-5">
         <button class="px-5 py-3 rounded-md text-[#094067] font-semibold">Login</button>
         <button class="px-5 py-3 text-white bg-[#3DA9FC] rounded-md shadow-[0_6px_30px_rgba(61,169,252,0.6)] font-semibold">Register</button>
         <button class="px-5 py-3 flex items-center space-x-1 font-semibold text-[#094067]">
@@ -41,15 +51,15 @@
       </div>
     </nav>
   </header>
-  <main class="max-w-screen-xl mx-auto">
+  <main class="max-w-screen-xl mx-auto overflow-x-hidden px-4 sm:px-5">
     <!-- Hero Section -->
-    <section class="grid grid-cols-12 mb-20 m-3">
-      <div class="col-span-6">
-        <span class="px-3 py-1.5 mb-4 bg-[#3DA9FC] bg-opacity-10 text-[#3DA9FC] font-semibold tracking-wide rounded-full">•Healing kapanpun dan dimanapun!</span>
-        <h1 class="text-7xl mb-4 font-extrabold text-[#094067] leading-tight">Jelajahi Dunia dan <span class="text-[#3DA9FC]">Temukan</span> Keindahannya</h1>
-        <p class="mb-6 text-lg tracking-wide leading-8 font-medium text-[#5F6C7B] pr-32">Trippi dapat membantu kamu menikmati perjalanan yang tak terlupakan. Mulailah petualangan baru dan jelajahi destinasi liburan terbaik di seluruh dunia.</p>
-        <div class="flex items-center space-x-6">
-          <button class="px-9 py-5 bg-[#3DA9FC] flex items-center text-white font-semibold rounded-md shadow-[0_6px_30px_rgba(61,169,252,0.6)]">
+    <section class="grid grid-cols-6 lg:grid-cols-12 mb-20">
+      <div class="col-span-6 text-center lg:text-left">
+        <span class="inline-block px-3 py-1.5 mb-4 bg-[#3DA9FC] bg-opacity-10 text-[#3DA9FC] font-semibold tracking-wide rounded-full">•Healing kapanpun dan dimanapun!</span>
+        <h1 class="text-5xl sm:text-6xl md:text-7xl mb-4 font-extrabold text-[#094067] leading-tight">Jelajahi Dunia dan <span class="text-[#3DA9FC]">Temukan</span> Keindahannya</h1>
+        <p class="mb-6 text-base md:text-lg tracking-wide leading-8 font-medium text-[#5F6C7B] pr-0 md:pr-4 xl:pr-32">Trippi dapat membantu kamu menikmati perjalanan yang tak terlupakan. Mulailah petualangan baru dan jelajahi destinasi liburan terbaik di seluruh dunia.</p>
+        <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 justify-center lg:justify-start">
+          <button class="w-full md:w-fit px-9 py-5 bg-[#3DA9FC] flex items-center justify-center md:justify-start text-white font-semibold rounded-md shadow-[0_6px_30px_rgba(61,169,252,0.6)]">
             <span>Lihat Destinasi</span>
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -58,7 +68,7 @@
               <line x1="15" y1="8" x2="19" y2="12"></line>
             </svg>
           </button>
-          <button class="px-9 py-5 flex items-center text-[#3DA9FC] font-semibold space-x-4">
+          <button class="w-fit px-9 py-5 flex items-center justify-center md:justify-start text-[#3DA9FC] font-semibold space-x-4">
             <div class="p-4 rounded-full border border-[#3DA9FC]">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                  <rect width="24" height="24" fill="#FFFFFE"/>
@@ -69,24 +79,24 @@
           </button>
         </div>
       </div>
-      <div class="col-span-6 pl-24">
+      <div class="col-span-6 pl-24 hidden lg:block">
         <img src="assets/img/hero.png" alt="">
       </div>
     </section>
     <!-- Partners Section -->
-    <section class="w-full flex items-center justify-center space-x-11 py-12 mb-24">
-      <img src="assets/img/partners/agoda.png" class="h-[35px] grayscale opacity-20" alt="">
-      <img src="assets/img/partners/tripadvisor.png" class="h-[35px] grayscale opacity-20" alt="">
-      <img src="assets/img/partners/pegipegi.svg" class="h-[35px] grayscale opacity-20" alt="">
-      <img src="assets/img/partners/reddorz.png" class="h-[35px] grayscale opacity-20" alt="">
-      <img src="assets/img/partners/traveloka.png" class="h-[35px] grayscale opacity-20" alt="">
+    <section class="w-full flex flex-col lg:flex-row items-center justify-center space-y-11 lg:space-y-0 lg:space-x-11 py-12 mb-24">
+      <img src="assets/img/partners/agoda.png" class="h-[56px] lg:h-[35px] grayscale opacity-20" alt="">
+      <img src="assets/img/partners/tripadvisor.png" class="h-[56px] lg:h-[35px] grayscale opacity-20" alt="">
+      <img src="assets/img/partners/pegipegi.svg" class="h-[56px] lg:h-[35px] grayscale opacity-20" alt="">
+      <img src="assets/img/partners/reddorz.png" class="h-[56px] lg:h-[35px] grayscale opacity-20" alt="">
+      <img src="assets/img/partners/traveloka.png" class="h-[56px] lg:h-[35px] grayscale opacity-20" alt="">
     </section>
     <!-- Favorite Section -->
-    <section class="py-2 mb-32">
+    <section class="py-2 mb-16 text-center lg:text-left">
       <span class="text-[#3DA9FC] inline-block font-semibold leading-tight mb-4">Destinasi Favorit</span>
-      <div class="flex items-center justify-between mb-5">
-        <h3 class="text-4xl text-[#094067] font-extrabold leading-tight">Top Destinasi Untuk Anak Muda Healing</h3>
-        <button class="font-semibold text-[#3DA9FC] leading-tight flex items-center space-x-2">
+      <div class="flex items-center justify-between mb-8 lg:mb-5">
+        <h3 class="text-4xl text-[#094067] font-extrabold leading-tight w-full lg:w-fit">Top Destinasi Untuk Anak Muda Healing</h3>
+        <button class="hidden font-semibold text-[#3DA9FC] leading-tight lg:flex items-center space-x-2">
           Lihat Selengkapnya
           <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -94,31 +104,38 @@
           </svg>
         </button>
       </div>
-      <div class="grid grid-cols-12 gap-x-12">
+      <div class="grid grid-cols-4 lg:grid-cols-12 gap-y-12 lg:gap-y-0 lg:gap-x-12 mb-8">
         <div class="col-span-4 flex flex-col items-center justify-center rounded-xl">
-          <img src="assets/img/destination/tangkuban-parahu.jpg" class="h-[100%] object-cover object-center mb-4 rounded-xl shadow-[0_9px_40px_rgba(9,64,103,0.20)]" alt="">
+          <img src="assets/img/destination/tangkuban-parahu.jpg" class="h-[100%] aspect-video lg:aspect-auto object-cover object-center mb-4 rounded-xl shadow-[0_9px_40px_rgba(9,64,103,0.20)]" alt="">
           <h5 class="text-xl text-[#094067] font-bold mb-3.5">Gunung Tangkuban Parahu</h5>
           <p class="text-sm text-[#5F6C7B] font-medium">Bandung, Indonesia</p>
         </div>
         <div class="col-span-4 flex flex-col items-center justify-center rounded-xl">
-          <img src="assets/img/destination/sayang-heulang.jpg" class="h-[100%] object-cover object-center mb-4 rounded-xl shadow-[0_9px_40px_rgba(9,64,103,0.20)]" alt="">
+          <img src="assets/img/destination/sayang-heulang.jpg" class="h-[100%] aspect-video lg:aspect-auto object-cover object-center mb-4 rounded-xl shadow-[0_9px_40px_rgba(9,64,103,0.20)]" alt="">
           <h5 class="text-xl text-[#094067] font-bold mb-3.5">Pantai Sayang Heulang</h5>
           <p class="text-sm text-[#5F6C7B] font-medium">Garut, Indonesia</p>
         </div>
         <div class="col-span-4 flex flex-col items-center justify-center rounded-xl">
-          <img src="assets/img/destination/sekitaran-lembang.jpg" class="h-[100%] object-cover object-center mb-4 rounded-xl shadow-[0_9px_40px_rgba(9,64,103,0.20)]" alt="">
+          <img src="assets/img/destination/sekitaran-lembang.jpg" class="h-[100%] aspect-video lg:aspect-auto object-cover object-center mb-4 rounded-xl shadow-[0_9px_40px_rgba(9,64,103,0.20)]" alt="">
           <h5 class="text-xl text-[#094067] font-bold mb-3.5">Sekitaran Lembang</h5>
           <p class="text-sm text-[#5F6C7B] font-medium">Bandung, Indonesia</p>
         </div>
       </div>
+      <button class="font-semibold text-[#3DA9FC] leading-tight flex lg:hidden items-center mx-auto space-x-2">
+        Lihat Selengkapnya
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <polyline points="9 6 15 12 9 18"></polyline>
+        </svg>
+      </button>
     </section>
     <!-- Booking Hotel Section -->
-    <section class="grid grid-cols-2 mb-56">
-      <div class="pt-12">
+    <section class="grid grid-cols-1 lg:grid-cols-2 pt-16 pb-8 lg:pb-56">
+      <div class="pt-12 text-center lg:text-left">
         <span class="mb-4 text-[#3DA9FC] inline-block font-semibold leading-tight">Booking Penginapan</span>
-        <h2 class="mb-4 text-5xl text-[#094067] font-extrabold leading-tight pr-8">Mau Cari Penginapan? Cari Disini Aja! 👍🏻</h2>
-        <p class="mb-8 text-lg tracking-wide leading-8 font-medium text-[#5F6C7B] pr-24">Udah nemu tempat healing yang cocok tapi masih bingung cari penginapan terdekat? eits, tenang aja gen, di Trippi kalian juga bisa kok, cari penginapan terdekat!</p>
-        <button class="px-9 py-5 bg-[#3DA9FC] flex items-center text-white font-semibold rounded-md shadow-[0_6px_30px_rgba(61,169,252,0.6)] space-x-2.5">
+        <h2 class="mb-4 text-4xl md:text-5xl text-[#094067] font-extrabold leading-tight pr-0 xl:pr-8">Mau Cari Penginapan? Cari Disini Aja! 👍🏻</h2>
+        <p class="mb-8 text-base md:text-lg tracking-wide leading-8 font-medium text-[#5F6C7B] pr-0 xl:pr-24">Udah nemu tempat healing yang cocok tapi masih bingung cari penginapan terdekat? eits, tenang aja gen, di Trippi kalian juga bisa kok, cari penginapan terdekat!</p>
+        <button class="w-full lg:w-fit px-9 py-5 bg-[#3DA9FC] flex items-center justify-center text-white font-semibold rounded-md shadow-[0_6px_30px_rgba(61,169,252,0.6)] space-x-2.5">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <circle cx="10" cy="10" r="7"></circle>
@@ -128,14 +145,14 @@
         </button>
       </div>
       <div class="relative">
-        <img src="assets/img/booking-hotel.png" class="absolute -top-40 -left-12 min-w-[810px]" alt="">
+        <img src="assets/img/booking-hotel.png" class="relative lg:absolute top-0 lg:-top-40 -left-32 md:-left-16 lg:-left-40 xl:-left-12 min-w-[620px] sm:min-w-[810px]" alt="">
       </div>
     </section>
     <!-- Nearest Destination Section -->
-    <section class="w-full flex flex-col items-center justify-center py-4 mb-40">
+    <section class="w-full flex flex-col items-center justify-center py-4 mb-40 text-center lg:text-left">
       <span class="mb-4 text-[#3DA9FC] inline-block font-semibold leading-tight">Healing Tanpa Perlu Hilang</span>
-      <h2 class="mb-4 text-5xl text-[#094067] font-extrabold leading-tight">Wisata Ke Tempat Terdekat? Gaskan!</h2>
-      <p class="mb-8 text-lg tracking-wide leading-8 font-medium text-[#5F6C7B] text-center px-64">Buat kamu yang gamau liburan jauh-jauh dari kantor rumah, tenang aja! Kamu juga bisa cari tempat Wisata terdekat supaya bisa siap sedia ketika dibutuhkan 😁</p>
+      <h2 class="mb-4 text-4xl md:text-5xl text-[#094067] font-extrabold leading-tight">Wisata Ke Tempat Terdekat? Gaskan!</h2>
+      <p class="mb-8 text-base md:text-lg tracking-wide leading-8 font-medium text-[#5F6C7B] text-center px-0 lg:px-64">Buat kamu yang gamau liburan jauh-jauh dari kantor rumah, tenang aja! Kamu juga bisa cari tempat Wisata terdekat supaya bisa siap sedia ketika dibutuhkan 😁</p>
       <img src="assets/img/nearest-destination.png" class="w-full mb-8 shadow-[0_2px_8px_rgba(0,0,0,0.13)]" alt="">
       <button class="px-9 py-5 bg-[#3DA9FC] flex items-center text-white font-semibold rounded-md shadow-[0_6px_30px_rgba(61,169,252,0.6)]">
         <span>Mulai Sekarang</span>
@@ -148,41 +165,41 @@
       </button>
     </section>
     <!-- Testimonial Section -->
-    <section class="relative w-full min-h-[742px] py-24 flex flex-col items-center bg-[#D8EEFE] bg-opacity-75 rounded-xl mb-24">
+    <section class="relative w-[95%] mx-auto min-h-[742px] py-24 flex flex-col items-center bg-[#D8EEFE] bg-opacity-75 rounded-xl mb-24">
       <span class="mb-4 text-[#3DA9FC] inline-block font-semibold leading-tight">Testimoni</span>
-      <h2 class="mb-4 text-5xl text-[#094067] font-extrabold leading-tight">Apa Kata Mereka Tentang Trippi?</h2>
-      <p class="mb-8 text-lg tracking-wide leading-8 font-medium text-[#5F6C7B] text-center px-56">Kalo seandainya kamu belum percaya sama aplikasi ini gapapa, percaya mah sama Tuhan. Tapi setelah baca ulasan-ulasan ini mungkin kamu akan sedikit mempertimbangkan 😏</p>
+      <h2 class="mb-4 text-4xl md:text-5xl text-[#094067] font-extrabold leading-tight text-center lg:text-left">Apa Kata Mereka Tentang Trippi?</h2>
+      <p class="mb-8 text-base md:text-lg tracking-wide leading-8 font-medium text-[#5F6C7B] text-center px-2 lg:px-56">Kalo seandainya kamu belum percaya sama aplikasi ini gapapa, percaya mah sama Tuhan. Tapi setelah baca ulasan-ulasan ini mungkin kamu akan sedikit mempertimbangkan 😏</p>
       <div class="relative w-full">
         <div class="absolute top-0 left-[-3%] w-[106%]">
           <div class="swiper comment-slider px-5 h-[340px]">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide w-full max-h-[260px] p-8 rounded-xl shadow-lg bg-white">
-                <p class="text-[#5F6C7B] leading-relaxed mb-8">“Aplikasinya sangat membantu, saya bingung mau ngabisin jatah cuti saya untuk apa, tapi dengan aplikasi ini saya menghabiskan jatah cuti saya untuk liburan, Thank you Trippi.”</p>
+              <div class="swiper-slide w-full max-h-[240px] md:max-h-[215px] xl:max-h-[260px] p-8 sm:px-12 sm:py-8 md:p-6 xl:p-8 rounded-xl shadow-lg bg-white flex flex-col justify-between">
+                <p class="text-sm sm:text-lg md:text-sm xl:text-base text-[#5F6C7B] leading-relaxed">“Aplikasinya sangat membantu, saya bingung mau ngabisin jatah cuti saya untuk apa, tapi dengan aplikasi ini saya menghabiskan jatah cuti saya untuk liburan, Thank you Trippi.”</p>
                 <div class="flex items-center space-x-4">
-                  <img src="assets/img/avatar/sigit-rendang.jpg" class="w-12 h-12 rounded-full" alt="">
-                  <div class="space-y-3">
+                  <img src="assets/img/avatar/sigit-rendang.jpg" class="w-10 xl:w-12 h-10 xl:h-12 rounded-full" alt="">
+                  <div class="flex flex-col justify-between">
                     <h6 class="text-[#094067] font-medium">Sigit Rendang</h6>
                     <p class="text-sm text-[#5F6C7B]">Creative Designer</p>
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide w-full max-h-[260px] p-8 rounded-xl shadow-lg bg-white">
-                <p class="text-[#5F6C7B] leading-relaxed mb-8">“Nah ini nih, aplikasi yang cocok banget untuk saya ketika pengen nyentuh rumput, biar ngga nolep terus di rumah, Terima kasih  kepada Ortu saya, teman-teman saya, dan Trippi.”</p>
+              <div class="swiper-slide w-full max-h-[240px] md:max-h-[215px] xl:max-h-[260px] px-12 py-8 md:p-6 xl:p-8 rounded-xl shadow-lg bg-white flex flex-col justify-between">
+                <p class="text-sm sm:text-lg md:text-sm xl:text-base text-[#5F6C7B] leading-relaxed">“Nah ini nih, aplikasi yang cocok banget untuk saya ketika pengen nyentuh rumput, biar ngga nolep terus di rumah, Terima kasih  kepada Ortu saya, teman-teman saya, dan Trippi.”</p>
                 <div class="flex items-center space-x-4">
-                  <img src="assets/img/avatar/ilham-jawir.jpg" class="w-12 h-12 rounded-full" alt="">
-                  <div class="space-y-3">
+                  <img src="assets/img/avatar/ilham-jawir.jpg" class="w-10 xl:w-12 h-10 xl:h-12 rounded-full" alt="">
+                  <div class="flex flex-col justify-between">
                     <h6 class="text-[#094067] font-medium">Ilham Jawir</h6>
                     <p class="text-sm text-[#5F6C7B]">Discord Moderator</p>
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide w-full max-h-[260px] p-8 rounded-xl shadow-lg bg-white">
-                <p class="text-[#5F6C7B] leading-relaxed mb-8">“All in one aplikasi yang sangat membantu saya dan keluarga saya dikala ingin pergi berlibur, ga cuma bisa cari destinasi wisata, bahkan bisa booking hotel juga.”</p>
+              <div class="swiper-slide w-full max-h-[240px] md:max-h-[215px] xl:max-h-[260px] px-12 py-8 md:p-6 xl:p-8 rounded-xl shadow-lg bg-white flex flex-col justify-between">
+                <p class="text-sm sm:text-lg md:text-sm xl:text-base text-[#5F6C7B] leading-relaxed">“All in one aplikasi yang sangat membantu saya dan keluarga saya dikala ingin pergi berlibur, ga cuma bisa cari destinasi wisata, bahkan bisa booking hotel juga.”</p>
                 <div class="flex items-center space-x-4">
-                  <img src="assets/img/avatar/giga-chad.jpg" class="w-12 h-12 rounded-full" alt="">
-                  <div class="space-y-3">
+                  <img src="assets/img/avatar/giga-chad.jpg" class="w-10 xl:w-12 h-10 xl:h-12 rounded-full" alt="">
+                  <div class="flex flex-col justify-between">
                     <h6 class="text-[#094067] font-medium">Giga Chad</h6>
                     <p class="text-sm text-[#5F6C7B]">CEO PT. Chad Selalu</p>
                   </div>
@@ -200,29 +217,29 @@
       </div>
     </section>
     <!-- FAQ Section -->
-    <section class="w-full py-12 flex flex-col items-center mb-24">
+    <section class="w-full py-12 flex flex-col items-center mb-24 overflow-x-hidden">
       <span class="mb-4 text-[#3DA9FC] inline-block font-semibold leading-tight">Banyak Yang Nanya</span>
-      <h2 class="mb-4 text-5xl text-[#094067] font-extrabold leading-tight">Pertanyaan Yang Sering Diajukan</h2>
-      <p class="mb-12 text-lg tracking-wide leading-8 font-medium text-[#5F6C7B] text-center px-52">Banyak banget yang sering nanya ginian, jadi biar mimin ga cape nih mimin tulisin aja semuanya di section ini. Kalau masih ada yang nanya kepala kau sini mimin genjreng 🤟🏻</p>
-      <div class="w-full max-w-2xl">
+      <h2 class="mb-4 text-4xl md:text-5xl text-[#094067] font-extrabold leading-tight text-center lg:text-left">Pertanyaan Yang Sering Diajukan</h2>
+      <p class="mb-12 text-base md:text-lg tracking-wide leading-8 font-medium text-[#5F6C7B] text-center px-0 lg:px-52">Banyak banget yang sering nanya ginian, jadi biar mimin ga cape nih mimin tulisin aja semuanya di section ini. Kalau masih ada yang nanya kepala kau sini mimin genjreng 🤟🏻</p>
+      <div class="w-full max-w-2xl text-sm sm:text-base">
         <div class="w-full px-7 py-5 border-b border-[rgba(144,180,206,0.25)] flex items-center justify-between text-[#094067]">
-          <span class="font-medium text-lg">Apakah aplikasi ini sudah mendaftar di Kominfo?</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <span class="w-full font-medium text-base sm:text-lg">Apakah aplikasi ini sudah mendaftar di Kominfo?</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down w-5 sm:w-6 h-5 sm:h-6" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="6 9 12 15 18 9"></polyline>
          </svg>
         </div>
         <div class="w-full px-7 py-5 border-b border-[rgba(144,180,206,0.25)] flex items-center justify-between text-[#094067]">
-          <span class="font-medium text-lg">Apakah jika saya peduli maka saya lindungi juga?</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <span class="w-full font-medium text-base sm:text-lg">Apakah jika saya peduli maka saya lindungi juga?</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down w-5 sm:w-6 h-5 sm:h-6" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="6 9 12 15 18 9"></polyline>
          </svg>
         </div>
         <div class="w-full border-b border-[rgba(144,180,206,0.25)] divide-y divide-[rgba(255, 255, 255, 0.1)]  text-white bg-[#3DA9FC] rounded-md shadow-[0_30px_60px_rgba(9,64,103,0.25)]">
           <div class="px-7 py-5 flex items-center justify-between">
-            <span class="font-medium text-lg">Apakah aplikasi ini gratis?</span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="rotate-180 icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <span class="w-full font-medium text-base sm:text-lg">Apakah aplikasi ini gratis?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="rotate-180 icon icon-tabler icon-tabler-chevron-down w-5 sm:w-6 h-5 sm:h-6" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
@@ -232,29 +249,29 @@
           </div>
         </div>
         <div class="w-full px-7 py-5 border-b border-[rgba(144,180,206,0.25)] flex items-center justify-between text-[#094067]">
-          <span class="font-medium text-lg">Apakah ada tutor supaya saya tetap bisa produk terus?</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <span class="w-full font-medium text-base sm:text-lg">Apakah ada tutor supaya saya tetap bisa produk terus?</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down w-5 sm:w-6 h-5 sm:h-6" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="6 9 12 15 18 9"></polyline>
          </svg>
         </div>
         <div class="w-full px-7 py-5 border-b border-[rgba(144,180,206,0.25)] flex items-center justify-between text-[#094067]">
-          <span class="font-medium text-lg">Gatau lagi mau nambah pertanyaan apa</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <span class="w-full font-medium text-base sm:text-lg">Gatau lagi mau nambah pertanyaan apa</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down w-5 sm:w-6 h-5 sm:h-6" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="6 9 12 15 18 9"></polyline>
          </svg>
         </div>
         <div class="w-full px-7 py-5 border-b border-[rgba(144,180,206,0.25)] flex items-center justify-between text-[#094067]">
-          <span class="font-medium text-lg">Yodahlah tinggal section CTA sama Footer doang, mending turu</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <span class="w-full font-medium text-base sm:text-lg">Yodahlah tinggal section CTA sama Footer doang, mending turu</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down w-5 sm:w-6 h-5 sm:h-6" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="6 9 12 15 18 9"></polyline>
          </svg>
         </div>
         <div class="w-full px-7 py-5 border-b border-[rgba(144,180,206,0.25)] flex items-center justify-between text-[#094067]">
-          <span class="font-medium text-lg">Cara main lato-lato gimana sih?</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <span class="w-full font-medium text-base sm:text-lg">Cara main lato-lato gimana sih?</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down w-5 sm:w-6 h-5 sm:h-6" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="6 9 12 15 18 9"></polyline>
          </svg>
@@ -262,28 +279,30 @@
       </div>
     </section>
     <!-- CTA Section -->
-    <section class="relative w-full bg-[#D8EEFE] py-12 rounded-xl shadow-[0_6px_30px_rgba(9,64,103,0.13)] flex flex-col items-center mb-24 overflow-hidden">
-      <h3 class="text-4xl text-[#094067] text-center font-bold leading-tight px-56 mb-9">Pengen Dapet Info Seputar Destinasi Wisata? Yuk Berlangganan Di Newsletter Kami</h3>
-      <div class="flex items-center space-x-4">
-        <div class="px-6 py-4 w-[550px] bg-white shadow-md rounded-md flex space-x-2">
-          <input class="w-full border-none outline-none focus:outline-none" type="text" placeholder="Tulis alamat email kamu disini">
+    <section class="relative w-full bg-[#D8EEFE] py-12 rounded-xl shadow-[0_6px_30px_rgba(9,64,103,0.13)] mb-24 overflow-hidden">
+      <div class="relative z-10 flex flex-col items-center px-4 sm:px-8">
+        <h3 class="text-2xl sm:text-3xl lg:text-4xl text-[#094067] text-center font-bold leading-tight px-0 lg:px-24 xl:px-48 mb-9">Pengen Dapet Info Seputar Destinasi Wisata? Yuk Berlangganan Di Newsletter Kami</h3>
+        <div class="w-full flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-4">
+          <div class="px-6 py-4 w-full md:w-[550px] bg-white shadow-md rounded-md flex space-x-2">
+            <input class="w-full border-none outline-none focus:outline-none" type="text" placeholder="Tulis alamat email kamu disini">
+          </div>
+          <button class="w-full sm:w-fit bg-[#EF4565] px-6 py-4 text-white font-bold shadow-md shadow-[rgba(239,69,101,0.25)] rounded-md">Subscribe</button>
         </div>
-        <button class="bg-[#EF4565] px-6 py-4 text-white font-bold shadow-md shadow-[rgba(239,69,101,0.25)] rounded-md">Subscribe</button>
       </div>
-      <div class="absolute top-[-140%] left-[-27%] w-[500px] h-[680px] border-8 border-white rounded-full"></div>
-      <div class="absolute bottom-[-190%] left-[-25%] w-[500px] h-[680px] rotate-45 border-8 border-white rounded-full"></div>
-      <div class="absolute top-[-140%] right-[-27%] w-[500px] h-[680px] border-8 border-white rounded-full"></div>
-      <div class="absolute bottom-[-190%] right-[-16%] w-[500px] h-[680px] rotate-45 border-8 border-white rounded-full"></div>
+      <div class="absolute top-[-140%] left-[-27%] w-[500px] h-[680px] border-8 border-[rgba(255,255,255,0.75)] rounded-full"></div>
+      <div class="absolute bottom-[-190%] left-[-25%] w-[500px] h-[680px] rotate-45 border-8 border-[rgba(255,255,255,0.75)] rounded-full"></div>
+      <div class="absolute top-[-140%] right-[-27%] w-[500px] h-[680px] border-8 border-[rgba(255,255,255,0.75)] rounded-full"></div>
+      <div class="absolute bottom-[-190%] right-[-16%] w-[500px] h-[680px] rotate-45 border-8 border-[rgba(255,255,255,0.75)] rounded-full"></div>
     </section>
     <!-- Footer Section -->
-    <section class="">
-      <div class="py-12 grid grid-cols-12 gap-x-8">
+    <section>
+      <div class="py-12 grid grid-cols-6 lg:grid-cols-12 gap-y-8 lg:gap-y-0 lg:gap-x-8">
         <div class="col-span-6 space-y-4">
           <img src="assets/img/logo.png" class="w-9 h-9" alt="">
           <h5 class="text-xl font-bold text-[#094067]">Trippi</h5>
           <p class="text-[#5F6C7B] tracking-wide leading-relaxed pr-8">Trippi adalah situs untuk mencari destinasi wisata, termasuk rute pemberangkatan, dan booking penginapan terdekat.</p>
         </div>
-        <div class="col-span-2">
+        <div class="col-span-6 sm:col-span-2">
           <h6 class="text-[#094067] text-sm font-bold uppercase tracking-wide mb-5">Halaman</h6>
           <ul class="space-y-2">
             <li>
@@ -300,7 +319,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-span-2">
+        <div class="col-span-6 sm:col-span-2">
           <h6 class="text-[#094067] text-sm font-bold uppercase tracking-wide mb-5">Tentang</h6>
           <ul class="space-y-2">
             <li>
@@ -317,7 +336,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-span-2">
+        <div class="col-span-6 sm:col-span-2">
           <h6 class="text-[#094067] text-sm font-bold uppercase tracking-wide mb-5">Sosial Media</h6>
           <ul class="space-y-2">
             <li>
@@ -346,8 +365,17 @@
     const swiper = new Swiper('.comment-slider', {
       // Optional parameters
       loop: true,
-      slidesPerView: 3,
+      slidesPerView: 1,
       spaceBetween: 30,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+        // when window width is >= 1024px
+        1024: {
+          slidesPerView: 3,
+        },
+      },
 
       // If we need pagination
       pagination: {
