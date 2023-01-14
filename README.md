@@ -14,7 +14,7 @@
 </div>
 
 <p align="center">
-	<a href="https://github.com/RSurya99/trippi" _blank="true">Demo Page</a>&nbsp;&nbsp;&nbsp;
+	<a href="https://rsurya99.github.io/trippi" _blank="true">Demo Page</a>&nbsp;&nbsp;&nbsp;
 	<a href="https://github.com/RSurya99/trippi">Documentation Page</a>&nbsp;&nbsp;&nbsp;
 </p>
 
