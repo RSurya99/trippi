@@ -1,6 +1,6 @@
 <h1 align="center">Trippi Landing page</h1>
 
-![Trippi Screenshot](assets/img/preview.png)
+![Trippi Screenshot](assets/img/preview.webp)
 
 <p align="center">Trippi is a free Travel Landing Page Template</p>
 <div align="center">
