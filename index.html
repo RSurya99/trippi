@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="w-full">
@@ -20,7 +21,7 @@
           <img src="assets/img/logo.png" class="w-8 h-8" alt="Trippi Logo">
           <h5 class="text-xl font-bold text-[#094067]">Trippi</h5>
         </div>
-        <div class="hidden px-5 py-3 w-[550px] border-2 border-[#094067] rounded-md lg:flex space-x-2">
+        <div class="hidden px-5 py-3 w-[550px] border-2 border-[#094067] rounded-md lg:flex space-x-2 focus-within:ring-2 focus-within:ring-[#3DA9FC] ring-offset-2 transition duration-300">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <circle cx="10" cy="10" r="7"></circle>
@@ -40,9 +41,9 @@
         </button>
       </div>
       <div class="hidden lg:flex items-center space-x-5">
-        <button class="px-5 py-3 rounded-md text-[#094067] font-semibold">Login</button>
-        <button class="px-5 py-3 text-white bg-[#3DA9FC] rounded-md shadow-[0_6px_30px_rgba(61,169,252,0.6)] font-semibold">Register</button>
-        <button class="px-5 py-3 flex items-center space-x-1 font-semibold text-[#094067]">
+        <button class="px-5 py-3 rounded-md text-[#094067] font-semibold hover:text-[#094067]/75 transition duration-300">Login</button>
+        <button class="px-5 py-3 text-white bg-[#3DA9FC] rounded-md shadow-[0_6px_30px_rgba(61,169,252,0.6)] font-semibold hover:bg-[#3498E4] transition-colors duration-300">Register</button>
+        <button class="px-5 py-3 flex items-center space-x-1 font-semibold text-[#094067] hover:text-[#094067]/75 transition duration-300">
           <span>ID</span>
           <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -54,22 +55,22 @@
   </header>
   <main class="max-w-screen-xl mx-auto overflow-x-hidden px-4 sm:px-5">
     <!-- Hero Section -->
-    <section class="grid grid-cols-6 lg:grid-cols-12 mb-20">
+    <section data-aos="fade-up" data-aos-duration="1000" class="grid grid-cols-6 lg:grid-cols-12 mb-20">
       <div class="col-span-6 text-center lg:text-left">
         <span class="inline-block px-3 py-1.5 mb-4 bg-[#3DA9FC] bg-opacity-10 text-[#3DA9FC] font-semibold tracking-wide rounded-full">•Healing kapanpun dan dimanapun!</span>
         <h1 class="text-5xl sm:text-6xl md:text-7xl mb-4 font-extrabold text-[#094067] leading-tight">Jelajahi Dunia dan <span class="text-[#3DA9FC]">Temukan</span> Keindahannya</h1>
         <p class="mb-6 text-base md:text-lg tracking-wide leading-8 font-medium text-[#5F6C7B] pr-0 md:pr-4 xl:pr-32">Trippi dapat membantu kamu menikmati perjalanan yang tak terlupakan. Mulailah petualangan baru dan jelajahi destinasi liburan terbaik di seluruh dunia.</p>
         <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 justify-center lg:justify-start">
-          <button class="w-full md:w-fit px-9 py-5 bg-[#3DA9FC] flex items-center justify-center md:justify-start text-white font-semibold rounded-md shadow-[0_6px_30px_rgba(61,169,252,0.6)]">
+          <button class="w-full md:w-fit px-9 py-5 bg-[#3DA9FC] flex items-center justify-center md:justify-start text-white font-semibold rounded-md shadow-[0_6px_30px_rgba(61,169,252,0.6)] hover:bg-[#3498E4] group transition-colors duration-300">
             <span>Lihat Destinasi</span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right group-hover:translate-x-1.5 transition duration-300" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
               <line x1="5" y1="12" x2="19" y2="12"></line>
               <line x1="15" y1="16" x2="19" y2="12"></line>
               <line x1="15" y1="8" x2="19" y2="12"></line>
             </svg>
           </button>
-          <button class="w-fit px-9 py-5 flex items-center justify-center md:justify-start text-[#3DA9FC] font-semibold space-x-4">
+          <button class="w-fit px-9 py-5 flex items-center justify-center md:justify-start text-[#3DA9FC] font-semibold space-x-4 hover:scale-105 transition duration-300">
             <div class="p-4 rounded-full border border-[#3DA9FC]">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                  <rect width="24" height="24" fill="#FFFFFE"/>
@@ -85,15 +86,15 @@
       </div>
     </section>
     <!-- Partners Section -->
-    <section class="w-full flex flex-col lg:flex-row items-center justify-center space-y-11 lg:space-y-0 lg:space-x-11 py-12 mb-24">
-      <img src="assets/img/partners/agoda.png" class="h-[56px] lg:h-[35px] grayscale opacity-20" alt="">
-      <img src="assets/img/partners/tripadvisor.png" class="h-[56px] lg:h-[35px] grayscale opacity-20" alt="">
-      <img src="assets/img/partners/pegipegi.svg" class="h-[56px] lg:h-[35px] grayscale opacity-20" alt="">
-      <img src="assets/img/partners/reddorz.png" class="h-[56px] lg:h-[35px] grayscale opacity-20" alt="">
-      <img src="assets/img/partners/traveloka.png" class="h-[56px] lg:h-[35px] grayscale opacity-20" alt="">
+    <section data-aos="fade-right" data-aos-delay="500" data-aos-duration="700" class="w-full flex flex-col lg:flex-row items-center justify-center space-y-11 lg:space-y-0 lg:space-x-11 py-12 mb-24">
+      <img src="assets/img/partners/agoda.png" class="h-[56px] lg:h-[35px] grayscale opacity-20 hover:grayscale-0 hover:opacity-100 transition duration-500" alt="">
+      <img src="assets/img/partners/tripadvisor.png" class="h-[56px] lg:h-[35px] grayscale opacity-20 hover:grayscale-0 hover:opacity-100 transition duration-500" alt="">
+      <img src="assets/img/partners/pegipegi.svg" class="h-[56px] lg:h-[35px] grayscale opacity-20 hover:grayscale-0 hover:opacity-100 transition duration-500" alt="">
+      <img src="assets/img/partners/reddorz.png" class="h-[56px] lg:h-[35px] grayscale opacity-20 hover:grayscale-0 hover:opacity-100 transition duration-500" alt="">
+      <img src="assets/img/partners/traveloka.png" class="h-[56px] lg:h-[35px] grayscale opacity-20 hover:grayscale-0 hover:opacity-100 transition duration-500" alt="">
     </section>
     <!-- Favorite Section -->
-    <section class="py-2 mb-16 text-center lg:text-left">
+    <section data-aos="zoom-in" data-aos-duration="1000" class="py-2 mb-16 text-center lg:text-left">
       <span class="text-[#3DA9FC] inline-block font-semibold leading-tight mb-4">Destinasi Favorit</span>
       <div class="flex items-center justify-between mb-8 lg:mb-5">
         <h3 class="text-4xl text-[#094067] font-extrabold leading-tight w-full lg:w-fit">Top Destinasi Untuk Anak Muda Healing</h3>
@@ -106,17 +107,17 @@
         </button>
       </div>
       <div class="grid grid-cols-4 lg:grid-cols-12 gap-y-12 lg:gap-y-0 lg:gap-x-12 mb-8">
-        <div class="col-span-4 flex flex-col items-center justify-center rounded-xl">
+        <div class="col-span-4 flex flex-col items-center justify-center rounded-xl hover:scale-105 transition duration-300 cursor-pointer">
           <img src="assets/img/destination/tangkuban-parahu.webp" class="h-[100%] aspect-video lg:aspect-auto object-cover object-center mb-4 rounded-xl shadow-[0_9px_40px_rgba(9,64,103,0.20)]" alt="">
           <h5 class="text-xl text-[#094067] font-bold mb-3.5">Gunung Tangkuban Parahu</h5>
           <p class="text-sm text-[#5F6C7B] font-medium">Bandung, Indonesia</p>
         </div>
-        <div class="col-span-4 flex flex-col items-center justify-center rounded-xl">
+        <div class="col-span-4 flex flex-col items-center justify-center rounded-xl hover:scale-105 transition duration-300 cursor-pointer">
           <img src="assets/img/destination/sayang-heulang.webp" class="h-[100%] aspect-video lg:aspect-auto object-cover object-center mb-4 rounded-xl shadow-[0_9px_40px_rgba(9,64,103,0.20)]" alt="">
           <h5 class="text-xl text-[#094067] font-bold mb-3.5">Pantai Sayang Heulang</h5>
           <p class="text-sm text-[#5F6C7B] font-medium">Garut, Indonesia</p>
         </div>
-        <div class="col-span-4 flex flex-col items-center justify-center rounded-xl">
+        <div class="col-span-4 flex flex-col items-center justify-center rounded-xl hover:scale-105 transition duration-300 cursor-pointer">
           <img src="assets/img/destination/sekitaran-lembang.webp" class="h-[100%] aspect-video lg:aspect-auto object-cover object-center mb-4 rounded-xl shadow-[0_9px_40px_rgba(9,64,103,0.20)]" alt="">
           <h5 class="text-xl text-[#094067] font-bold mb-3.5">Sekitaran Lembang</h5>
           <p class="text-sm text-[#5F6C7B] font-medium">Bandung, Indonesia</p>
@@ -132,11 +133,11 @@
     </section>
     <!-- Booking Hotel Section -->
     <section class="grid grid-cols-1 lg:grid-cols-2 pt-16 pb-8 lg:pb-56">
-      <div class="pt-12 text-center lg:text-left">
+      <div data-aos="fade-right" data-aos-duration="700" class="pt-12 text-center lg:text-left">
         <span class="mb-4 text-[#3DA9FC] inline-block font-semibold leading-tight">Booking Penginapan</span>
         <h2 class="mb-4 text-4xl md:text-5xl text-[#094067] font-extrabold leading-tight pr-0 xl:pr-8">Mau Cari Penginapan? Cari Disini Aja! 👍🏻</h2>
         <p class="mb-8 text-base md:text-lg tracking-wide leading-8 font-medium text-[#5F6C7B] pr-0 xl:pr-24">Udah nemu tempat healing yang cocok tapi masih bingung cari penginapan terdekat? eits, tenang aja gen, di Trippi kalian juga bisa kok, cari penginapan terdekat!</p>
-        <button class="w-full lg:w-fit px-9 py-5 bg-[#3DA9FC] flex items-center justify-center text-white font-semibold rounded-md shadow-[0_6px_30px_rgba(61,169,252,0.6)] space-x-2.5">
+        <button class="w-full lg:w-fit px-9 py-5 bg-[#3DA9FC] flex items-center justify-center text-white font-semibold rounded-md shadow-[0_6px_30px_rgba(61,169,252,0.6)] space-x-2.5 hover:bg-[#3498E4] transition-colors duration-300">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <circle cx="10" cy="10" r="7"></circle>
@@ -145,19 +146,19 @@
           <span>Cari Penginapan</span>
         </button>
       </div>
-      <div class="relative">
+      <div data-aos="fade-left" data-aos-duration="700" class="relative">
         <img src="assets/img/booking-hotel.webp" class="relative lg:absolute top-0 lg:-top-40 -left-32 md:-left-16 lg:-left-40 xl:-left-12 min-w-[620px] sm:min-w-[810px]" alt="">
       </div>
     </section>
     <!-- Nearest Destination Section -->
-    <section class="w-full flex flex-col items-center justify-center py-4 mb-40 text-center lg:text-left">
+    <section data-aos="fade-up" data-aos-duration="1000" class="w-full flex flex-col items-center justify-center py-4 mb-40 text-center lg:text-left">
       <span class="mb-4 text-[#3DA9FC] inline-block font-semibold leading-tight">Healing Tanpa Perlu Hilang</span>
       <h2 class="mb-4 text-4xl md:text-5xl text-[#094067] font-extrabold leading-tight">Wisata Ke Tempat Terdekat? Gaskan!</h2>
       <p class="mb-8 text-base md:text-lg tracking-wide leading-8 font-medium text-[#5F6C7B] text-center px-0 lg:px-64">Buat kamu yang gamau liburan jauh-jauh dari kantor rumah, tenang aja! Kamu juga bisa cari tempat Wisata terdekat supaya bisa siap sedia ketika dibutuhkan 😁</p>
       <img src="assets/img/nearest-destination.webp" class="w-full mb-8 shadow-[0_2px_8px_rgba(0,0,0,0.13)]" alt="">
-      <button class="px-9 py-5 bg-[#3DA9FC] flex items-center text-white font-semibold rounded-md shadow-[0_6px_30px_rgba(61,169,252,0.6)]">
+      <button class="px-9 py-5 bg-[#3DA9FC] flex items-center text-white font-semibold rounded-md shadow-[0_6px_30px_rgba(61,169,252,0.6)] hover:bg-[#3498E4] group transition-all duration-300">
         <span>Mulai Sekarang</span>
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right group-hover:translate-x-1.5 transition duration-300" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
           <line x1="5" y1="12" x2="19" y2="12"></line>
           <line x1="15" y1="16" x2="19" y2="12"></line>
@@ -166,7 +167,7 @@
       </button>
     </section>
     <!-- Testimonial Section -->
-    <section class="relative w-[95%] mx-auto min-h-[742px] py-24 flex flex-col items-center bg-[#D8EEFE] bg-opacity-75 rounded-xl mb-24">
+    <section data-aos="fade-down" data-aos-delay="100" data-aos-duration="700" class="relative w-[95%] mx-auto min-h-[742px] py-24 flex flex-col items-center bg-[#D8EEFE] bg-opacity-75 rounded-xl mb-24">
       <span class="mb-4 text-[#3DA9FC] inline-block font-semibold leading-tight">Testimoni</span>
       <h2 class="mb-4 text-4xl md:text-5xl text-[#094067] font-extrabold leading-tight text-center lg:text-left">Apa Kata Mereka Tentang Trippi?</h2>
       <p class="mb-8 text-base md:text-lg tracking-wide leading-8 font-medium text-[#5F6C7B] text-center px-2 lg:px-56">Kalo seandainya kamu belum percaya sama aplikasi ini gapapa, percaya mah sama Tuhan. Tapi setelah baca ulasan-ulasan ini mungkin kamu akan sedikit mempertimbangkan 😏</p>
@@ -218,7 +219,7 @@
       </div>
     </section>
     <!-- FAQ Section -->
-    <section class="w-full py-12 flex flex-col items-center mb-24 overflow-x-hidden">
+    <section data-aos="fade-up" data-aos-delay="50" data-aos-duration="500" class="w-full py-12 flex flex-col items-center mb-24 overflow-x-hidden">
       <span class="mb-4 text-[#3DA9FC] inline-block font-semibold leading-tight">Banyak Yang Nanya</span>
       <h2 class="mb-4 text-4xl md:text-5xl text-[#094067] font-extrabold leading-tight text-center lg:text-left">Pertanyaan Yang Sering Diajukan</h2>
       <p class="mb-12 text-base md:text-lg tracking-wide leading-8 font-medium text-[#5F6C7B] text-center px-0 lg:px-52">Banyak banget yang sering nanya ginian, jadi biar mimin ga cape nih mimin tulisin aja semuanya di section ini. Kalau masih ada yang nanya kepala kau sini mimin genjreng 🤟🏻</p>
@@ -280,14 +281,14 @@
       </div>
     </section>
     <!-- CTA Section -->
-    <section class="relative w-full bg-[#D8EEFE] py-12 rounded-xl shadow-[0_6px_30px_rgba(9,64,103,0.13)] mb-24 overflow-hidden">
+    <section data-aos="zoom-in" data-aos-delay="50" data-aos-duration="500" class="relative w-full bg-[#D8EEFE] py-12 rounded-xl shadow-[0_6px_30px_rgba(9,64,103,0.13)] mb-24 overflow-hidden">
       <div class="relative z-10 flex flex-col items-center px-4 sm:px-8">
         <h3 class="text-2xl sm:text-3xl lg:text-4xl text-[#094067] text-center font-bold leading-tight px-0 lg:px-24 xl:px-48 mb-9">Pengen Dapet Info Seputar Destinasi Wisata? Yuk Berlangganan Di Newsletter Kami</h3>
         <div class="w-full flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-4">
-          <div class="px-6 py-4 w-full md:w-[550px] bg-white shadow-md rounded-md flex space-x-2">
+          <div class="px-6 py-4 w-full md:w-[550px] bg-white shadow-md rounded-md flex space-x-2 focus-within:ring-2 focus-within:ring-[#3DA9FC] ring-offset-2 transition duration-300">
             <input class="w-full border-none outline-none focus:outline-none" type="text" placeholder="Tulis alamat email kamu disini">
           </div>
-          <button class="w-full sm:w-fit bg-[#EF4565] px-6 py-4 text-white font-bold shadow-md shadow-[rgba(239,69,101,0.25)] rounded-md">Subscribe</button>
+          <button class="w-full sm:w-fit bg-[#EF4565] px-6 py-4 text-white font-bold shadow-md shadow-[rgba(239,69,101,0.25)] rounded-md hover:bg-[#d03753] transition-colors duration-300">Subscribe</button>
         </div>
       </div>
       <div class="absolute top-[-140%] left-[-27%] w-[500px] h-[680px] border-8 border-[rgba(255,255,255,0.75)] rounded-full"></div>
@@ -296,7 +297,7 @@
       <div class="absolute bottom-[-190%] right-[-16%] w-[500px] h-[680px] rotate-45 border-8 border-[rgba(255,255,255,0.75)] rounded-full"></div>
     </section>
     <!-- Footer Section -->
-    <section>
+    <section data-aos="fade-down">
       <div class="py-12 grid grid-cols-6 lg:grid-cols-12 gap-y-8 lg:gap-y-0 lg:gap-x-8">
         <div class="col-span-6 space-y-4">
           <img src="assets/img/logo.png" class="w-9 h-9" alt="">
@@ -307,16 +308,16 @@
           <h6 class="text-[#094067] text-sm font-bold uppercase tracking-wide mb-5">Halaman</h6>
           <ul class="space-y-2">
             <li>
-              <a href="#" class="text-[#5F6C7B]">Destinasi Wisata</a>
+              <a href="#" class="text-[#5F6C7B] hover:text-[#33393f] transition duration-300">Destinasi Wisata</a>
             </li>
             <li>
-              <a href="#" class="text-[#5F6C7B]">Booking Penginapan</a>
+              <a href="#" class="text-[#5F6C7B] hover:text-[#33393f] transition duration-300">Booking Penginapan</a>
             </li>
             <li>
-              <a href="#" class="text-[#5F6C7B]">Destinasi Terdekat</a>
+              <a href="#" class="text-[#5F6C7B] hover:text-[#33393f] transition duration-300">Destinasi Terdekat</a>
             </li>
             <li>
-              <a href="#" class="text-[#5F6C7B]">Profil Saya</a>
+              <a href="#" class="text-[#5F6C7B] hover:text-[#33393f] transition duration-300">Profil Saya</a>
             </li>
           </ul>
         </div>
@@ -324,16 +325,16 @@
           <h6 class="text-[#094067] text-sm font-bold uppercase tracking-wide mb-5">Tentang</h6>
           <ul class="space-y-2">
             <li>
-              <a href="#" class="text-[#5F6C7B]">Tentang Kami</a>
+              <a href="#" class="text-[#5F6C7B] hover:text-[#33393f] transition duration-300">Tentang Kami</a>
             </li>
             <li>
-              <a href="#" class="text-[#5F6C7B]">Kebijakan Privasi</a>
+              <a href="#" class="text-[#5F6C7B] hover:text-[#33393f] transition duration-300">Kebijakan Privasi</a>
             </li>
             <li>
-              <a href="#" class="text-[#5F6C7B]">Galeri</a>
+              <a href="#" class="text-[#5F6C7B] hover:text-[#33393f] transition duration-300">Galeri</a>
             </li>
             <li>
-              <a href="#" class="text-[#5F6C7B]">Bantuan</a>
+              <a href="#" class="text-[#5F6C7B] hover:text-[#33393f] transition duration-300">Bantuan</a>
             </li>
           </ul>
         </div>
@@ -341,16 +342,16 @@
           <h6 class="text-[#094067] text-sm font-bold uppercase tracking-wide mb-5">Sosial Media</h6>
           <ul class="space-y-2">
             <li>
-              <a href="#" class="text-[#5F6C7B]">Twitter</a>
+              <a href="#" class="text-[#5F6C7B] hover:text-[#33393f] transition duration-300">Twitter</a>
             </li>
             <li>
-              <a href="#" class="text-[#5F6C7B]">Facebook</a>
+              <a href="#" class="text-[#5F6C7B] hover:text-[#33393f] transition duration-300">Facebook</a>
             </li>
             <li>
-              <a href="#" class="text-[#5F6C7B]">Instagram</a>
+              <a href="#" class="text-[#5F6C7B] hover:text-[#33393f] transition duration-300">Instagram</a>
             </li>
             <li>
-              <a href="#" class="text-[#5F6C7B]">Tiktok</a>
+              <a href="#" class="text-[#5F6C7B] hover:text-[#33393f] transition duration-300">Tiktok</a>
             </li>
           </ul>
         </div>
@@ -362,7 +363,9 @@
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
+    AOS.init();
     const swiper = new Swiper('.comment-slider', {
       // Optional parameters
       loop: true,
